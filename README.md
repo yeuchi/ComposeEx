@@ -3,6 +3,9 @@ Exercises of Kotlin Compose
 
 # References
 
+0. Youtube: JetPack Compose Setup by CodingWithMitch, Dec 4, 2020
+https://www.youtube.com/watch?v=GuVyQ1zuZuw
+
 1. Google Jetpack Compose documentation \
 https://developer.android.com/jetpack/compose/documentation
 
