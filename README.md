@@ -4,7 +4,7 @@ Exercises of Kotlin Compose
 ### Hello World
 Google documentation <sup>[1,2,3]</sup> disappoint with non-functional library. \
 I am unable to use the 1.0.0.beta because foundation library is missing Text. \
-Reverting to 1.0.0.alpha06 for below hellow world as specified in Alex Sullivan's tutorial <sup>[0]</sup> \
+Revert to 1.0.0.alpha06 for below hellow world as specified in Alex Sullivan's tutorial <sup>[0]</sup> 
 
 <img width="200" src="https://user-images.githubusercontent.com/1282659/110254952-018f8f80-7f57-11eb-8029-22bdf0545c2f.png">
 
