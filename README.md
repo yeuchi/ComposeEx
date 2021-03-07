@@ -2,7 +2,7 @@
 Exercises of Kotlin Compose
 
 ### Hello World
-Google documentations <sup>[1,2,3]</sup> disappoint with non-functional library. \
+Google documentation <sup>[1,2,3]</sup> disappoint with non-functional library. \
 I am unable to use the 1.0.0.beta because foundation library is missing Text. \
 Reverting to 1.0.0.alpha06 for below hellow world as specified in Alex Sullivan's tutorial <sup>[0]</sup> \
 
