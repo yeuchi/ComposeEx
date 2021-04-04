@@ -22,3 +22,7 @@ https://github.com/android/compose-samples
 
 3. Google Compose Pathways \
 https://developer.android.com/courses/pathways/compose
+
+4. Jetpack Compose Tutorial - Step by Step Guide by Mindorks, November 2020 \
+https://blog.mindorks.com/jetpack-compose-tutorial \
+https://github.com/MindorksOpenSource/Jetpack-Compose-Android-Examples
