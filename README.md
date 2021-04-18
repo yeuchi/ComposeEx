@@ -2,7 +2,8 @@
 Exercises of Kotlin Compose
 
 ### Hello World
-Latest Google Compose project type.
+Latest Google Compose project type. 
+
 <img width="200" src="https://user-images.githubusercontent.com/1282659/115156218-ccdc2100-a048-11eb-8ca4-32eab9c3a134.png">
 
 # References
