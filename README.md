@@ -7,9 +7,12 @@ Navigation to sub-activities for exercises.
 <img width="200" src="https://user-images.githubusercontent.com/1282659/115158245-d66a8680-a052-11eb-9270-d49fb0035659.png">
 
 ### TextActivity
-Exercising various text types and styles. 
-
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115157367-783ba480-a04e-11eb-8b5f-fbca851887fc.png">
+Exercising various text types and styles. \
+Text() - static text element \
+ClickableText() - text button \
+TextField() - EditText equivalent \
+Snackbar() - Tooltip / Snackbar equivalent \
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115158686-0d419c00-a055-11eb-827b-bfd0a4cfab09.png">
 
 ### ButtonActivity
 Exercising various buttons and styles.
