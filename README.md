@@ -2,12 +2,9 @@
 Exercises of Kotlin Compose
 
 ### Hello World
-Google documentation <sup>[1,2,3]</sup> disappoint with non-functional library. \
-I am unable to use the 1.0.0.beta because foundation library is missing Text. \
-Revert to 1.0.0.alpha06 for below hellow world as specified in Alex Sullivan's tutorial <sup>[0]</sup> 
+Latest Google Compose project type. 
 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/110254952-018f8f80-7f57-11eb-8029-22bdf0545c2f.png">
-
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115156218-ccdc2100-a048-11eb-8ca4-32eab9c3a134.png">
 
 # References
 
