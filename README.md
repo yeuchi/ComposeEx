@@ -6,7 +6,7 @@ Navigation to sub-activities for exercises.
 - TopAppBar() - Toolbar equivalent 
 - Column() - LinearLayout equivalent 
 - Spacer() - empty view as spacer equivalent 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115158245-d66a8680-a052-11eb-9270-d49fb0035659.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115166106-0461c200-a077-11eb-98db-90844569a488.png">
 
 ### TextActivity
 Exercising various text types and styles. 
@@ -18,7 +18,10 @@ Exercising various text types and styles.
 
 ### ButtonActivity
 Exercising various buttons and styles.
-
+- Radio buttons
+- Button() - as is
+- ClickableText() - text button 
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115166110-06c41c00-a077-11eb-9986-b89ebae71d8d.png">
 
 # References
 
