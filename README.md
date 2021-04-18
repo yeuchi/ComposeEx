@@ -1,10 +1,19 @@
 # ComposeEx
 Exercises of Kotlin Compose
 
-### Hello World
-Latest Google Compose project type. 
+### MainActivity
+Navigation to sub-activities for exercises.
 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115156218-ccdc2100-a048-11eb-8ca4-32eab9c3a134.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115158245-d66a8680-a052-11eb-9270-d49fb0035659.png">
+
+### TextActivity
+Exercising various text types and styles. 
+
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115157367-783ba480-a04e-11eb-8b5f-fbca851887fc.png">
+
+### ButtonActivity
+Exercising various buttons and styles.
+
 
 # References
 
