@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.input.TextFieldValue
@@ -15,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.ctyeung.composeex.ui.theme.ComposeExTheme
 
 class TextActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -23,15 +25,24 @@ class TextActivity : ComponentActivity() {
                 Surface(color = MaterialTheme.colors.background) {
 
                     TopAppBar(title = {
-                        Text("Exercise Compose")
+                        Text("Exercise Text Elements")
                     })
 
-                    Column(modifier = Modifier
-                        .fillMaxHeight()
-                        .fillMaxWidth()
-                        .padding(20.dp)) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+
+                        var snackbarVisibleState = remember { mutableStateOf(false) }
 
                         Spacer(Modifier.height(62.dp))
+
+                        var onClickText: (Int) -> Unit = {
+                            snackbarVisibleState.value = !snackbarVisibleState.value
+                        }
 
                         ClickableText(text = AnnotatedString("Click-A-Text"), onClick = onClickText)
 
@@ -46,17 +57,31 @@ class TextActivity : ComponentActivity() {
                         // onValueChange will be called when there is a change in content of text field.
                         TextField(
                             value = text,
-                            modifier = Modifier.padding(16.dp).fillMaxWidth(),
+                            modifier = Modifier
+                                .padding(16.dp)
+                                .fillMaxWidth(),
                             onValueChange = {
                                 text = it
                             }
                         )
+
+                        if (snackbarVisibleState.value) {
+                            Snackbar(
+
+                                action = {
+                                    Button(onClick = {}) {
+                                        Text("MyAction")
+                                    }
+                                },
+                                modifier = Modifier.padding(8.dp)
+                            ) { Text(text = "This is a snackbar!") }
+                        }
                     }
                 }
             }
         }
     }
-    var onClickText: (Int) -> Unit = {}
+
 }
 
 @Composable

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
@@ -39,8 +40,9 @@ class MainActivity : AppCompatActivity() {
                     Column(
                         modifier = Modifier
                             .fillMaxHeight()
-                            .fillMaxWidth()
-                            .padding(20.dp)
+                            .fillMaxWidth(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
                     ) {
 
                         Spacer(Modifier.height(62.dp))
@@ -72,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     var onClickText: () -> Unit = {
         startActivity(
             Intent(this, TextActivity::class.java)
