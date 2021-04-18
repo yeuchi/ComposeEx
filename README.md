@@ -4,7 +4,7 @@ Exercises of Kotlin Compose
 ### MainActivity
 Navigation to sub-activities for exercises.
 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115157362-75d94a80-a04e-11eb-85b1-7b62b6239443.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115158245-d66a8680-a052-11eb-9270-d49fb0035659.png">
 
 ### TextActivity
 Exercising various text types and styles. 
