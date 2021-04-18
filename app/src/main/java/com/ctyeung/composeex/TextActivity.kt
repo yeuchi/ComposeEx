@@ -21,15 +21,17 @@ class TextActivity : ComponentActivity() {
             ComposeExTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
+
+                    TopAppBar(title = {
+                        Text("Exercise Compose")
+                    })
+
                     Column(modifier = Modifier
                         .fillMaxHeight()
-                        .fillMaxWidth()) {
+                        .fillMaxWidth()
+                        .padding(20.dp)) {
 
-                        TopAppBar(title = {
-                            Text("Exercise Compose")
-                        })
-
-                        Spacer(Modifier.height(32.dp))
+                        Spacer(Modifier.height(62.dp))
 
                         ClickableText(text = AnnotatedString("Click-A-Text"), onClick = onClickText)
 
