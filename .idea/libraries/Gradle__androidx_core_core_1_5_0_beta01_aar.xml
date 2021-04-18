@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.core:core:1.5.0-beta01@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/94072135e5a052f25dd4319ee7fe5980/transformed/core-1.5.0-beta01/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b68c6296f6a5a990adbef9b82a62a76e/transformed/core-1.5.0-beta01/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/94072135e5a052f25dd4319ee7fe5980/transformed/core-1.5.0-beta01/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94072135e5a052f25dd4319ee7fe5980/transformed/core-1.5.0-beta01/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94072135e5a052f25dd4319ee7fe5980/transformed/core-1.5.0-beta01/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b68c6296f6a5a990adbef9b82a62a76e/transformed/core-1.5.0-beta01/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b68c6296f6a5a990adbef9b82a62a76e/transformed/core-1.5.0-beta01/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b68c6296f6a5a990adbef9b82a62a76e/transformed/core-1.5.0-beta01/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

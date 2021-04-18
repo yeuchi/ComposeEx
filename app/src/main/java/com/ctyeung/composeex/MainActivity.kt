@@ -1,13 +1,17 @@
 package com.ctyeung.composeex
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
@@ -28,9 +32,12 @@ class MainActivity : AppCompatActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
 
-                    Column(modifier = Modifier
-                        .fillMaxHeight()
-                        .fillMaxWidth()) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .fillMaxWidth()
+                            .padding(20.dp)
+                    ) {
 
                         TopAppBar(title = {
                             Text("Exercise Compose")
@@ -38,31 +45,44 @@ class MainActivity : AppCompatActivity() {
 
                         Spacer(Modifier.height(32.dp))
 
-                        ClickableText(text = AnnotatedString("Click-A-Text"), onClick = onClickText)
-
-                        Spacer(Modifier.height(32.dp))
-
-                        Greeting("Android")
-
-                        Spacer(Modifier.height(32.dp))
-
-                        var text by remember { mutableStateOf(TextFieldValue("Enter text here")) }
-                        // BaseTextField is a composable that is used to take input. It is similar to EditText.
-                        // onValueChange will be called when there is a change in content of text field.
-                        TextField(
-                            value = text,
-                            modifier = Modifier.padding(16.dp).fillMaxWidth(),
-                            onValueChange = {
-                                text = it
-                            }
+                        Button(
+                            onClick = onClickText,
+                            enabled = true,
+                            border = BorderStroke(width = 1.dp, brush = SolidColor(Color.Blue)),
+                            shape = MaterialTheme.shapes.medium,
                         )
+                        {
+                            Text(text = "Text", color = Color.White)
+                        }
+
+                        Spacer(Modifier.height(32.dp))
+
+                        Button(
+                            onClick = onClickButton,
+                            enabled = true,
+
+                            border = BorderStroke(width = 1.dp, brush = SolidColor(Color.Blue)),
+                            shape = MaterialTheme.shapes.medium,
+                        )
+                        {
+                            Text(text = "Buttons", color = Color.White)
+                        }
                     }
                 }
             }
         }
     }
+    var onClickText: () -> Unit = {
+        startActivity(
+            Intent(this, TextActivity::class.java)
+        )
+    }
 
-    var onClickText: (Int) -> Unit = {}
+    var onClickButton: () -> Unit = {
+        startActivity(
+            Intent(this, ButtonActivity::class.java)
+        )
+    }
 }
 
 @Composable
