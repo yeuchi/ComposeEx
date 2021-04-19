@@ -1,5 +1,6 @@
 package com.ctyeung.composeex
 
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +10,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.*
+import androidx.compose.material.IconButton
+import androidx.compose.material.Icon
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -23,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import com.ctyeung.composeex.ui.theme.ComposeExTheme
 
 class ButtonActivity : ComponentActivity() {
-     
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -33,7 +38,19 @@ class ButtonActivity : ComponentActivity() {
 
                     TopAppBar(title = {
                         Text("Exercise Buttons")
-                    })
+                    },
+                        navigationIcon = {
+                            IconButton(onClick = {
+                                onBackPressed()
+                            }) {
+                                Icon(
+                                    Icons.Filled.ArrowBack,
+                                    contentDescription = "back",
+                                    tint = Color.White
+                                )
+                            }
+                        }
+                    )
 
                     val radioOptions = listOf("rdo1", "rdo2", "rdo3")
                     val (selectedOption, onOptionSelected) = remember { mutableStateOf(radioOptions[2]) }
@@ -63,7 +80,10 @@ class ButtonActivity : ComponentActivity() {
 
                         Spacer(Modifier.height(32.dp))
 
-                        ClickableText(text = AnnotatedString("Text Button"), onClick = onClickTextButton)
+                        ClickableText(
+                            text = AnnotatedString("Text Button"),
+                            onClick = onClickTextButton
+                        )
 
                         Spacer(Modifier.height(32.dp))
 
@@ -74,7 +94,8 @@ class ButtonActivity : ComponentActivity() {
                                     .selectable(
                                         selected = (text == selectedOption),
                                         onClick = { onOptionSelected(text) }
-                                    ).padding(horizontal = 16.dp)
+                                    )
+                                    .padding(horizontal = 16.dp)
                             ) {
                                 RadioButton(
                                     selected = (text == selectedOption),

@@ -6,9 +6,12 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
@@ -26,7 +29,19 @@ class TextActivity : ComponentActivity() {
 
                     TopAppBar(title = {
                         Text("Exercise Text Elements")
-                    })
+                    },
+                        navigationIcon = {
+                            IconButton(onClick = {
+                                onBackPressed()
+                            }) {
+                                Icon(
+                                    Icons.Filled.ArrowBack,
+                                    contentDescription = "back",
+                                    tint = Color.White
+                                )
+                            }
+                        }
+                    )
 
                     Column(
                         modifier = Modifier
