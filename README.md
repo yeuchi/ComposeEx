@@ -14,14 +14,14 @@ Exercising various text types and styles.
 - ClickableText() - text button 
 - TextField() - EditText equivalent 
 - Snackbar() - Tooltip / Snackbar equivalent 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115158686-0d419c00-a055-11eb-827b-bfd0a4cfab09.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115166898-02016700-a07b-11eb-9133-7bcea1f346ef.png">
 
 ### ButtonActivity
 Exercising various buttons and styles.
 - Radio buttons
 - Button() - as is
 - ClickableText() - text button 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115166110-06c41c00-a077-11eb-9986-b89ebae71d8d.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115166899-0299fd80-a07b-11eb-8677-3e9113d47947.png">
 
 # References
 
