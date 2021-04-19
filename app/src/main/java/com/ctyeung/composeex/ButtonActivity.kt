@@ -110,6 +110,7 @@ class ButtonActivity : ComponentActivity() {
                                 )
                             }
                         }
+                        CheckBoxTest()
                     }
                 }
             }
@@ -119,6 +120,15 @@ class ButtonActivity : ComponentActivity() {
     var onClickButton: () -> Unit = {
 
     }
+}
+
+@Composable
+fun CheckBoxTest() {
+    val checkedState = remember { mutableStateOf(true) }
+    Checkbox(checked = checkedState.value, onCheckedChange = { checked ->
+        checkedState.value = checked
+    })
+    Text(text="Checkbox")
 }
 
 @Composable
