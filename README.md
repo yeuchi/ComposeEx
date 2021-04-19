@@ -10,18 +10,19 @@ Navigation to sub-activities for exercises.
 
 ### TextActivity
 Exercising various text types and styles. 
-- Text() - static text element 
+- Text() 
 - ClickableText() - text button 
 - TextField() - EditText equivalent 
-- Snackbar() - Tooltip / Snackbar equivalent 
+- Snackbar() - Tooltip / Snackbar
 <img width="200" src="https://user-images.githubusercontent.com/1282659/115166898-02016700-a07b-11eb-9133-7bcea1f346ef.png">
 
 ### ButtonActivity
 Exercising various buttons and styles.
-- Radio buttons
-- Button() - as is
+- RadioButton()
+- Checkbox()
+- Button() 
 - ClickableText() - text button 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115166899-0299fd80-a07b-11eb-8677-3e9113d47947.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/115168225-c3ba7680-a07f-11eb-93fc-e1122f8420d3.png">
 
 # References
 
