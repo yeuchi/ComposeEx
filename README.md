@@ -1,5 +1,5 @@
 # ComposeEx
-Exercises of Kotlin Compose
+Plain Vanilla Exercises of Kotlin Compose.  Nothing cool.
 
 ### MainActivity
 Navigation to sub-activities for exercises.
