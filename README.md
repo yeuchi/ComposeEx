@@ -24,6 +24,11 @@ Exercising various buttons and styles.
 - ClickableText() - text button 
 <img width="200" src="https://user-images.githubusercontent.com/1282659/115168225-c3ba7680-a07f-11eb-93fc-e1122f8420d3.png">
 
+# Device
+Code executed on Samsung S9.
+
+# Android Studio - 4.2 Preview Canary
+
 # References
 
 0. Jetpack Compose Tutorial for Android: Getting Started, By Alex Sullivan, Nov 16 2020 \
