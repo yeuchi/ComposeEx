@@ -6,7 +6,7 @@ Navigation to sub-activities for exercises.
 - TopAppBar() - Toolbar equivalent 
 - Column() - LinearLayout equivalent 
 - Spacer() - empty view as spacer equivalent 
-<img width="200" src="https://user-images.githubusercontent.com/1282659/115166106-0461c200-a077-11eb-98db-90844569a488.png">
+<img width="200" src="https://user-images.githubusercontent.com/1282659/120253725-bfbc6f80-c24d-11eb-916d-2a92f3f98310.png">
 
 ### TextActivity
 Exercising various text types and styles. 
@@ -23,6 +23,12 @@ Exercising various buttons and styles.
 - Button() 
 - ClickableText() - text button 
 <img width="200" src="https://user-images.githubusercontent.com/1282659/115168225-c3ba7680-a07f-11eb-93fc-e1122f8420d3.png">
+
+### AnimateActivity
+Exercising various animation from Andrew's article <sup> [6] </sup>
+- Offset Animation
+- Visibility Animation (work in progress)
+<img width="200" src="https://user-images.githubusercontent.com/1282659/120253916-44a78900-c24e-11eb-9f0c-ac0bea51bc0f.png"> <img width="200" src="https://user-images.githubusercontent.com/1282659/120253921-46714c80-c24e-11eb-808e-b25875bbb61c.png">
 
 # Device
 Code executed on Samsung S9.
