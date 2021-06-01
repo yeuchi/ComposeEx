@@ -49,3 +49,7 @@ https://github.com/MindorksOpenSource/Jetpack-Compose-Android-Examples
 
 5. Jetpack Compose Playground - Snackbar \
 https://foso.github.io/Jetpack-Compose-Playground/material/snackbar/
+
+6. Animate with Jetpack Compose - Animate as State and Animation Specs by Andrew Khrystian, April 15, 2021 \
+https://proandroiddev.com/animate-with-jetpack-compose-animate-as-state-and-animation-specs-ffc708bb45f8
+
