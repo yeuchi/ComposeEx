@@ -69,6 +69,19 @@ class MainActivity : AppCompatActivity() {
                         {
                             Text(text = "Buttons", color = Color.White)
                         }
+
+                        Spacer(Modifier.height(32.dp))
+
+                        Button(
+                            onClick = onClickAnimate,
+                            enabled = true,
+
+                            border = BorderStroke(width = 1.dp, brush = SolidColor(Color.Blue)),
+                            shape = MaterialTheme.shapes.medium,
+                        )
+                        {
+                            Text(text = "Animate", color = Color.White)
+                        }
                     }
                 }
             }
@@ -84,6 +97,12 @@ class MainActivity : AppCompatActivity() {
     var onClickButton: () -> Unit = {
         startActivity(
             Intent(this, ButtonActivity::class.java)
+        )
+    }
+
+    var onClickAnimate: () -> Unit = {
+        startActivity(
+            Intent(this, AnimateActivity::class.java)
         )
     }
 }

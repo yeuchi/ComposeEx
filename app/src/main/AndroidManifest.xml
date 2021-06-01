@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeEx">
         <activity
+            android:name=".AnimateActivity"
+            android:exported="true"
+            android:label="@string/title_activity_animate"
+            android:theme="@style/Theme.ComposeEx.NoActionBar" />
+        <activity
             android:name=".ButtonActivity"
             android:exported="true"
             android:label="@string/title_activity_button"
